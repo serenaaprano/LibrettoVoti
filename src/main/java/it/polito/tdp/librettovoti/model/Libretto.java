@@ -32,6 +32,37 @@ public class Libretto {
 	
 	}
 	
+	//stampa i voti uguali al numero passato come parametro(il test lo faccio poi in TestLibretto)
+	public List <Voto> listaVotiUguali(int punteggio){
+		
+		List<Voto> risultato=new ArrayList<Voto>();
+		for(Voto v:voti) {
+			
+			if(v.getVoto()==punteggio) {
+				
+				risultato.add(v);
+			}
+			
+						
+		}
+		
+		return risultato;
+
+	}
+	
+	public Libretto votiUguali(int punteggio) {
+		Libretto risultato=new Libretto();
+		for(Voto v:voti) {
+			if(v.getVoto()==punteggio)
+				risultato.add(v);
+			
+		}
+		
+		return risultato;
+		
+		
+		
+	}
 	
 	
 }
