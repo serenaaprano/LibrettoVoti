@@ -64,5 +64,27 @@ public class Libretto {
 		
 	}
 	
+	/**
+	 * ricerca il Voto del corso il cui nome è passato come parametro, null se non esiste tale voto cioe l'esame non è stato passato
+	 * @param nomeCorso
+	 * @return
+	 */
+	
+	public Voto ricercaNomeCorso(String nomeCorso) {
+		
+		Voto risultato=null;
+		for(Voto v:this.voti) {
+			
+			if(v.getNomeCorso().equals(nomeCorso)) {
+				
+				risultato=v;
+				break;
+			}
+		}
+		
+		return risultato;
+		
+	}
+	
 	
 }

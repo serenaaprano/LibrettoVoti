@@ -21,8 +21,11 @@ public class TestLibretto {
 		System.out.println(venticinque);
 		Libretto librettoVenticinque=libretto.votiUguali(25);
 		System.out.println(librettoVenticinque);
+		Voto votoFisica=libretto.ricercaNomeCorso("Fisica 1");
+		System.out.println(votoFisica);
 		
-		
+		Voto votoAlgebra=libretto.ricercaNomeCorso("Algebra");
+		System.out.println(votoAlgebra);
 	}
 
 }
